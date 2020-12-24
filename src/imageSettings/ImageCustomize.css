@@ -1,0 +1,225 @@
+.image-customize__container {
+  padding: 12px 22px 0px 22px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1000;
+  top: 70px;
+  left: -50px;
+  background: #ffffff;
+  box-shadow: 0px 14px 40px rgba(15, 44, 71, 0.3);
+  border-radius: 8px;
+}
+
+.image-customize__headers {
+  padding: 0 54px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-change__click,
+.image-filter__click {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #a1a6aa;
+}
+.image-filter__click--active {
+  color: #4a5257;
+}
+
+.image-filter__click {
+  padding-left: 28px;
+}
+.image-customize__container hr {
+  border: none;
+  border-bottom: 1px solid #4a5257;
+  opacity: 0.2;
+  margin: 12px 0 20px 0;
+}
+
+/* filter component  */
+
+.img-filter__container {
+  width: 220px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.img-filter-item__row {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 19px;
+}
+.last {
+  margin-bottom: 38px;
+}
+.img-filter__icon {
+  height: 15px;
+  width: 15px;
+  padding-right: 17px;
+}
+.img-filter-parcent {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  color: #a1a6aa;
+  padding-left: 10px;
+  width: 41px;
+  white-space: nowrap;
+}
+
+/* thumb  */
+input[type='range'] {
+  height: 25px;
+  -webkit-appearance: none;
+  /* margin: 10px 0; */
+  width: 100%;
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  /* animate: 0.2s; */
+  box-shadow: 0px 0px 0px #000000;
+  background: #a1a6aa;
+  border-radius: 20px;
+  border: 0px solid #000000;
+}
+input[type='range']::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #a1a6aa;
+  height: 18px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.5px;
+}
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #a1a6aa;
+}
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  /* animate: 0.2s; */
+  box-shadow: 0px 0px 0px #000000;
+  background: #a1a6aa;
+  border-radius: 20px;
+  border: 0px solid #000000;
+}
+input[type='range']::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #a1a6aa;
+  height: 18px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  /* animate: 0.2s; */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+  background: #a1a6aa;
+  border: 0px solid #000000;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type='range']::-ms-fill-upper {
+  background: #a1a6aa;
+  border: 0px solid #000000;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type='range']::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #a1a6aa;
+  height: 18px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: #a1a6aa;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: #a1a6aa;
+}
+/* image change component */
+
+.img-change__container {
+  width: 220px;
+}
+.img-change {
+  width: 100%;
+  height: 153px;
+}
+
+input[type='file'] {
+  display: none;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 58px 22px 58px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #35aef2;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  background: #4a5257;
+  width: 112px;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 110;
+}
+.tool img {
+  height: 16px;
+  width: 16px;
+  margin: 0;
+  border: none;
+}
+.bar {
+  width: 1px;
+  height: 24px;
+  background: #ffffff;
+}
+.arrow_img {
+  position: absolute;
+  top: 27px;
+  left: 20px;
+}
+.arrow_img img {
+  height: 8px;
+  width: 16px;
+}
+.img__settings,
+.img__delete {
+  cursor: pointer;
+}
